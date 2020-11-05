@@ -12,7 +12,7 @@ request(url, (error, response, body) => {
     const stats = fs.statSync(file);
     if (err)
       console.log(err);
-    console.log(`Downloaded and saved ${stats.size} bytes to ${args[1].toString()}`);
+    console.log(`Downloaded and saved ${stats.size} bytes to ${file}`);
   });
 });
 
